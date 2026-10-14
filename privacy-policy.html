@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Falcı Naciye — Gizlilik Politikası</title>
+<style>body{font-family:sans-serif;max-width:720px;margin:32px auto;padding:0 16px;line-height:1.6;color:#222}h1{font-size:24px}h2{font-size:18px;margin-top:28px}.tarih{color:#666}</style>
+</head>
+<body>
+<h1>Falcı Naciye — Gizlilik Politikası (KVKK Aydınlatma Metni)</h1>
+<p class="tarih">Son güncelleme: 14 Ekim 2026</p>
+
+<h2>1. Özet</h2>
+<p>Falcı Naciye, profilinizi (ad, soyad, doğum tarihi, burç, hitap) ve fallarınızı <strong>şifreli olarak cihazınızda</strong> saklar. Anahtar mobilde işletim sistemi kasasındadır (Android Keystore / iOS Keychain). Kendi sunucumuzda profil kaydı tutmayız; verilerinizi satmayız.</p>
+<p><strong>Ancak:</strong> yapay zekâ yorumu, sesli okuma ve reklamlar için gerekli veri, işlem anında ilgili üçüncü taraf servise gönderilir (aşağıda liste). Yani veriler <em>yalnızca telefonda</em> kalmaz; çekirdek profil şifreli olarak telefonda durur, işlevsel aktarım işlem anında olur.</p>
+
+<h2>2. Hukuki sebep ve açık rıza (KVKK m.5-6)</h2>
+<p>Kayıt ekranındaki kutuyu işaretlemeden uygulamaya devam edemezsiniz. Kutuyu işaretleyerek; profil bilgilerinizin cihazda şifreli saklanmasını ve fal/ses/reklam işlevleri için gerekli verinin işlem anında ilgili servise gönderilmesini kabul etmiş olursunuz. Onay kaydı (evet + tarih) cihazda tutulur. Onayınızı dilediğiniz zaman <strong>Profil → Profili sıfırla</strong> ile geri alabilirsiniz (tüm yerel veriler silinir).</p>
+
+<h2>3. Cihazda şifreli saklanan veriler</h2>
+<ul>
+<li>Profil: ad, soyad, doğum tarihi, burç, hitap şekli, KVKK onay kaydı</li>
+<li>Fallar, rüya günlüğü, jeton/hak bakiyesi, rozetler, favoriler, bildirim tercihi</li>
+</ul>
+<p>Eski sürümlerden kalan düz metin kayıtlar ilk açılışta otomatik olarak şifreli kasaya taşınır, düz kopya silinir.</p>
+
+<h2>4. Üçüncü taraflara işlem-anında aktarım</h2>
+<ul>
+<li><strong>Yapay zekâ yorumu (kullanırsanız):</strong> fincan fotoğrafı, niyet/rüya metni, ad/hitap/burç; yorum üretmek için yapımcının AI aracı sunucusu (Cloudflare Worker) üzerinden Google Gemini'ye iletilir. Sunucu günlükleri kapalıdır; isminiz KV'de saklanmaz (davet kodları yalnızca 6 haneli rastgele koddur).</li>
+<li><strong>Sesli okuma:</strong> fal metni, ses dosyasına çevrilmek için okuma anında TTS sunucusuna gönderilir, saklanmaz.</li>
+<li><strong>Reklamlar (AdMob / UMP):</strong> Google, reklam ve izin yönetimi için cihaz/reklam kimliği gibi teknik verileri kendi politikasına göre işleyebilir. <a href="https://policies.google.com/privacy">Google Gizlilik Politikası</a></li>
+<li><strong>Satın alımlar:</strong> premium ödemeler Google Play / App Store üzerinden yapılır, kart bilginiz bize ulaşmaz. Satın alma jetonu tek-kullanımlık olarak doğrulanır.</li>
+</ul>
+
+<h2>5. Konum, rehber, takip</h2>
+<p>Konum, rehber, dosya tarama, kimlik takibi yapmıyoruz. Kamera/galeri izni yalnızca fincan fotoğrafı içindir.</p>
+
+<h2>6. Çocuklar</h2>
+<p>Uygulama 13 yaş altına yönelik değildir. 13 yaşından küçükseniz ebeveyn gözetiminde kullanın.</p>
+
+<h2>7. Haklarınız (KVKK / GDPR)</h2>
+<p>Verilerinizin çoğu cihazınızdadır: uygulama verisini temizleyerek veya uygulamayı silerek silebilirsiniz. Erişim, düzeltme, silme ve rızayı geri çekme için: <strong>falcinaciye.destek@gmail.com</strong> (site alınınca destek@falcinaciye.com yapılacak).</p>
+
+<h2>8. Yayınlama</h2>
+<p>Bu dosya (<code>privacy-policy.html</code>) herkese açık bir adreste yayınlanmak zorundadır ve adres Google Play + App Store listelerine yazılır:<br>
+<code>https://falcinaciye.com/privacy-policy.html</code></p>
+
+<h2>9. Değişiklikler</h2>
+<p>Bu politika değişirse bu sayfada yayınlanır.</p>
+</body>
+</html>
